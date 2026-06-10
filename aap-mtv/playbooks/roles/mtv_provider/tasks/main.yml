@@ -7,5 +7,10 @@
   command: cat /tmp/provider.yml
   register: output
 
+- name: Create resource
+  kubernetes.core.k8s:
+    state: present
+    src: /tmp/provider.yaml
+
 - debug:
     var: output.stdout_lines
