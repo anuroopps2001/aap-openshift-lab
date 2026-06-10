@@ -10,7 +10,7 @@
 - name: Create resource
   kubernetes.core.k8s:
     state: present
-    src: /tmp/provider.yaml
+    src: /tmp/provider.yml
 
 - debug:
     var: output.stdout_lines
