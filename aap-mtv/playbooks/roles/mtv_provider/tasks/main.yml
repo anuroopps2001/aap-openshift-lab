@@ -4,7 +4,7 @@
     dest: /tmp/provider.yml
 
 - name: Display generated yaml
-  command: cat /tmp/provider.yaml
+  command: cat /tmp/provider.yml
   register: output
 
 - debug:
