@@ -1,0 +1,7 @@
+provider_name: vmware-etx
+
+vmware_host: vcenter.lab.local
+
+vmware_username: administrator@vsphere.local
+
+vmware_password: password123

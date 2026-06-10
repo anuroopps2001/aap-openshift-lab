@@ -1,0 +1,11 @@
+- name: Generate provider yaml
+  template:
+    src: provider.j2.yml
+    dest: /tmp/provider.yml
+
+- name: Display generated yaml
+  command: cat /tmp/provider.yaml
+  register: output
+
+- debug:
+    var: output.stdout_lines

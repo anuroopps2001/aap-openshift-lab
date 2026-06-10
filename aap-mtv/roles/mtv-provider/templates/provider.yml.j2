@@ -1,0 +1,11 @@
+apiVersion: forklift.konveyor.io/v1beta1
+kind: Provider
+
+metadata:
+  name: {{ provider_name }}
+  namespace: openshift-mtv
+
+spec:
+  type: vsphere
+
+  url: https://{{ vmware_host }}
